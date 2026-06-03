@@ -17,6 +17,7 @@
 15,16,ARB(AF)/26/2,Tanganyika Gold S.A.,Y,Republic of Burundi ,Pending,Y,2026-02-05 00:00:00,Y,Burundi,BDI,pycountry,2026,2,5,Yes
 16,17,ARB/26/7,Webuild S.p.A.,Y,Argentine Republic,Pending,Y,2026-02-02 00:00:00,Y,Argentina,ARG,pycountry,2026,2,2,No
 17,18,ARB/26/6,Igor Viktorovich Makarov,Y,Canada,Pending,Y,2026-01-30 00:00:00,Y,Canada,CAN,pycountry,2026,1,30,Yes
+18,19,ARB/26/5,"Upland Oil and Gas LLC and Upland Oil and Gas LLC, Sucursal del Perú",Y,"PeruPetro, S.A.",Pending,Y,2026-01-22 00:00:00,Y,Peru,,excluded,2026,1,22,Yes
 19,20,ARB/26/4,"S-Planning Co., Ltd. and others",Y,Swiss Confederation,Pending,Y,2026-01-16 00:00:00,Y,Switzerland,CHE,pycountry,2026,1,16,No
 20,21,ARB/26/2,Shell PLC,Y,Kingdom of the Netherlands ,Pending,Y,2026-01-15 00:00:00,Y,Netherlands,NLD,pycountry,2026,1,15,Yes
 21,22,ARB/26/3,Axis International Limited,Y,Republic of Guinea,Pending,Y,2026-01-16 00:00:00,Y,Guinea,GIN,pycountry,2026,1,16,Yes
@@ -35,6 +36,8 @@
 34,35,ARB/25/47,Optim Holding GmbH,Y,Ukraine,Pending,Y,2025-11-05 00:00:00,Y,Ukraine,UKR,pycountry,2025,11,5,No
 35,36,ARB/25/46,Ferrer Internacional S.A.,Y,Republic of Ecuador,Pending,Y,2025-10-29 00:00:00,Y,Ecuador,ECU,pycountry,2025,10,29,No
 36,37,ARB/25/45,"Yaacov Afik, Michael Mistriel Aykout and Shimon Mistriel Aykout",Y,Republic of Cyprus,Pending,Y,2025-10-06 00:00:00,Y,Cyprus,CYP,pycountry,2025,10,6,No
+37,38,ARB/25/44,PanAfrican Energy Tanzania Limited,Y,United Republic of Tanzania and Tanzania Petroleum Development Corporation,Concluded,Y,2025-08-28 00:00:00,Y,Tanzania,,excluded,2025,8,28,Yes
+38,39,ARB/25/43,PanAfrican Energy Tanzania Limited,Y,United Republic of Tanzania and Tanzania Petroleum Development Corporation,Pending,Y,2025-08-28 00:00:00,Y,Tanzania,,excluded,2025,8,28,Yes
 39,40,ARB/25/42,PanAfrican Energy Corporation,Y,United Republic of Tanzania ,Pending,Y,2025-08-28 00:00:00,Y,"Tanzania, United Republic of",TZA,pycountry,2025,8,28,Yes
 40,41,ARB/25/41,Enwell Energy plc,Y,Ukraine,Pending,Y,2025-08-22 00:00:00,Y,Ukraine,UKR,pycountry,2025,8,22,Yes
 41,42,ARB/25/40,Buried Hill Serdar Limited,Y,Turkmenistan,Pending,Y,2025-08-12 00:00:00,Y,Turkmenistan,TKM,pycountry,2025,8,12,Yes
@@ -70,6 +73,7 @@
 71,73,ARB/25/15,United Operations Limited,Y,Union of the Comoros,Concluded,Y,2025-03-31 00:00:00,Y,Comoros,COM,pycountry,2025,3,31,No
 72,74,ARB/25/14,Brookfield Corporation,Y,Republic of Peru,Pending,Y,2025-03-27 00:00:00,Y,Peru,PER,pycountry,2025,3,27,No
 73,75,ARB/25/13,"Victoria Oil & Gas Plc (in Administration), Victoria Energy Central Asia UK Limited and Victoria Energy Central Asia LLP",Y,Republic of Kazakhstan,Pending,Y,2025-03-21 00:00:00,Y,Kazakhstan,KAZ,pycountry,2025,3,21,Yes
+74,76,ARB/25/12,"Bellwether International, Inc. and Tecnipetrol Inc.",Y,Republic of  Ecuador and Empresa Pública de Hidrocarburos del Ecuador (EP Petroecuador),Pending,Y,2025-03-20 00:00:00,Y,Ecuador,,excluded,2025,3,20,Yes
 75,77,ARB/25/11,Dirk Andres in his capacity as insolvency administrator regarding the assets of HBH,Y,People's Democratic Republic of Algeria,Pending,Y,2025-03-14 00:00:00,Y,Algeria,DZA,pycountry,2025,3,14,No
 76,78,ARB/25/10,E.M.I.S. Finance B.V.,Y,Ukraine,Pending,Y,2025-03-10 00:00:00,Y,Ukraine,UKR,pycountry,2025,3,10,No
 77,79,ARB/25/9,Orano Mining SAS,Y,Republic of Niger,Pending,Y,2025-03-05 00:00:00,Y,Niger,NER,embedded_pycountry,2025,3,5,Yes
@@ -96,6 +100,7 @@
 98,100,ARB/24/42,Aqua Power and Catalysis Capital Ltd,Y,United Republic of Tanzania,Pending,Y,2024-10-09 00:00:00,Y,"Tanzania, United Republic of",TZA,pycountry,2024,10,9,No
 99,101,ARB/24/41,TMA Australia Pty Ltd and others,Y,Republic of the Philippines,Pending,Y,2024-09-23 00:00:00,Y,Philippines,PHL,pycountry,2024,9,23,No
 100,102,ARB/24/40,Minas de Revuboè Limitada,Y,Republic of Mozambique,Concluded,Y,2024-09-09 00:00:00,Y,Mozambique,MOZ,pycountry,2024,9,9,Yes
+101,103,ARB/24/39,"Chevron Bangladesh Block Twelve, Ltd. and Chevron Bangladesh Blocks Thirteen and Fourteen, Ltd.",Y,People’s Republic of Bangladesh and Bangladesh Oil Gas and Mineral Corporation,Pending,Y,2024-08-30 00:00:00,Y,Bangladesh,,excluded,2024,8,30,Yes
 102,104,ARB/24/38,Sauna UK BidCo Limited,Y,Republic of Finland,Pending,Y,2024-08-23 00:00:00,Y,Finland,FIN,pycountry,2024,8,23,No
 103,105,ARB/24/37,"Suomi Power Networks TopCo B.V., Supernova II Bidco BV and AMF Tjänstepension AB",Y,Republic of Finland ,Pending,Y,2024-08-23 00:00:00,Y,Finland,FIN,pycountry,2024,8,23,No
 104,106,ARB/24/36,PETRONAS International Corporation Ltd,Y,Republic of South Sudan,Pending,Y,2024-08-23 00:00:00,Y,South Sudan,SSD,pycountry,2024,8,23,Yes
@@ -221,6 +226,7 @@
 224,229,ARB(AF)/22/3,"Fábrica de Vidrio Los Andes, C.A. and Owens-Illinois de Venezuela, C.A.",Y,Bolivarian Republic of Venezuela,Concluded,Y,2022-07-27 00:00:00,Y,"Venezuela, Bolivarian Republic of",VEN,pycountry,2022,7,27,No
 225,230,ARB/22/20,PCCW Cascade (Middle East) Ltd.,Y,Kingdom of Saudi Arabia,Pending,Y,2022-07-26 00:00:00,Y,Saudi Arabia,SAU,pycountry,2022,7,26,No
 226,231,UNCT/20/6,Theodore D. Einarsson and others,Y,Canada,Pending,Y,2020-10-27 00:00:00,Y,Canada,CAN,pycountry,2020,10,27,No
+227,232,ARB/22/19,Upland Oil and Gas LLC (USA) and Upland Oil and Gas LLC (Perú),Y,PeruPetro S.A.,Concluded,Y,2022-07-13 00:00:00,Y,Peru,,excluded,2022,7,13,Yes
 228,233,ARB/22/18,Digicel (Singapore) Private Limited,Y,Independent State of Papua New Guinea,Concluded,Y,2022-07-06 00:00:00,Y,Papua New Guinea,PNG,pycountry,2022,7,6,No
 229,234,ARB/22/17,Comercializadora Mediterránea de Viviendas S.L.,Y,Kingdom of Morocco ,Pending,Y,2022-06-27 00:00:00,Y,Morocco,MAR,pycountry,2022,6,27,No
 230,235,ARB/22/16,Ozkartallar Inşaat Sanayi Ve Ticaret A.S. and Campak Temizlik Bilgi Işlem Otomasyon Saglik Hizmetleri Iletişim Sanayi Ve Ticaret A.S.,Y,Islamic Republic of Pakistan,Concluded,Y,2022-06-21 00:00:00,Y,Pakistan,PAK,pycountry,2022,6,21,No
@@ -238,6 +244,7 @@
 242,247,UNCT/18/6,Sacyr S.A.,Y,Republic of Panama,Concluded,Y,2018-08-03 00:00:00,Y,Panama,PAN,pycountry,2018,8,3,No
 243,248,ARB/22/6,"Consolidated Water Coöperatief, U.A.",Y,United Mexican States ,Concluded,Y,2022-02-22 00:00:00,Y,Mexico,MEX,pycountry,2022,2,22,No
 244,249,ARB/22/5,Samson Wu,Y,Republic of Panama,Concluded,Y,2022-02-14 00:00:00,Y,Panama,PAN,pycountry,2022,2,14,No
+245,250,ARB/22/4,KrisEnergy Bangladesh Limited,Y,"People’s Republic of Bangladesh and Bangladesh Oil, Gas and Mineral Corporation",Pending,Y,2022-01-26 00:00:00,Y,Bangladesh,,excluded,2022,1,26,Yes
 246,251,ARB/22/3,"Corporación Nacional del Cobre de Chile, Exploraciones Mineras Andinas S.A. and Inversiones Copperfield SPA",Y,Republic of Ecuador,Pending,Y,2022-01-25 00:00:00,Y,Ecuador,ECU,pycountry,2022,1,25,Yes
 247,252,ARB/22/2,"Huawei Technologies Co., Ltd.",Y,Kingdom of Sweden,Pending,Y,2022-01-21 00:00:00,Y,Sweden,SWE,pycountry,2022,1,21,No
 248,253,ARB/22/1,Louis Claude Norland Suzor and SBEC Systems Limited,Y,Republic of Senegal,Concluded,Y,2022-01-05 00:00:00,Y,Senegal,SEN,pycountry,2022,1,5,No
@@ -311,6 +318,7 @@
 316,329,ARB/20/53,Bachar Kiwan,Y,State of Kuwait,Concluded,Y,2020-12-17 00:00:00,Y,Kuwait,KWT,pycountry,2020,12,17,No
 317,330,ARB/20/52,"Koch Industries, Inc. and Koch Supply & Trading, LP",Y,Canada,Concluded,Y,2020-12-17 00:00:00,Y,Canada,CAN,pycountry,2020,12,17,No
 318,331,ARB/20/51,Worth Capital Holdings 27 LLC,Y,Republic of Peru,Concluded,Y,2020-12-15 00:00:00,Y,Peru,PER,pycountry,2020,12,15,Yes
+319,332,ARB/20/50,Contour Global Kosovo LLC,Y,Republic of Kosovo and others,Concluded,Y,2020-12-07 00:00:00,Y,Kosovo,,excluded,2020,12,7,No
 320,333,ARB/20/49,Ahron G. Frenkel,Y,Republic of Croatia,Pending,Y,2020-11-16 00:00:00,Y,Croatia,HRV,pycountry,2020,11,16,No
 321,335,ARB/20/48,Grupo Energía Bogotá S.A. E.S.P. and Transportadora de Energía de Centroamérica S.A.,Y,Republic of Guatemala,Pending,Y,2020-11-03 00:00:00,Y,Guatemala,GTM,pycountry,2020,11,3,No
 322,337,ARB(AF)/20/3,"Liberty Seguros, Compañia de Seguros Y Reaseguros and Liberty UK and Europe Holdings Limited (UK)",Y,Bolivarian Republic of Venezuela,Concluded,Y,2020-11-03 00:00:00,Y,"Venezuela, Bolivarian Republic of",VEN,pycountry,2020,11,3,No
@@ -387,7 +395,9 @@
 393,433,ARB/19/21,Petrochemical Holding GmbH,Y,Romania,Pending,Y,2019-07-09 00:00:00,Y,Romania,ROU,pycountry,2019,7,9,Yes
 394,435,ARB/19/20,Ayat Nizar Raja Sumrain and others,Y,State of Kuwait,Concluded,Y,2019-06-30 00:00:00,Y,Kuwait,KWT,pycountry,2019,6,30,No
 395,436,ARB/19/19,IC Power Ltd and Kenon Holdings Ltd,Y,Republic of Peru,Pending,Y,2019-06-27 00:00:00,Y,Peru,PER,pycountry,2019,6,27,No
+396,441,ARB/19/18,Niko Exploration (Block 9) Ltd.,Y,People’s Republic of Bangladesh and Bangladesh Oil Gas and Mineral Corporation,Pending,Y,2019-06-21 00:00:00,Y,Bangladesh,,excluded,2019,6,21,Yes
 397,442,ARB/19/17,"Richard N. Westbury, Paul D. Hinks and Symbion Power Tanzania Limited",Y,United Republic of Tanzania,Concluded,Y,2019-05-31 00:00:00,Y,"Tanzania, United Republic of",TZA,pycountry,2019,5,31,No
+398,443,CONC/19/1,La Camerounaise des Eaux (CDE) ,Y,Republic of Cameroon and Cameroon Water Utilities Cooperation (CAMWATER),Concluded,Y,2019-05-24 00:00:00,Y,Cameroon,,excluded,2019,5,24,No
 399,444,ARB/19/16,Latin American Regional Aviation Holding S. de R.L.,Y,Oriental Republic of Uruguay,Concluded,Y,2019-05-23 00:00:00,Y,Uruguay,URY,embedded_pycountry,2019,5,23,No
 400,445,ARB/19/15,Axiata Investments (UK) Limited and Ncell Private Limited,Y,Nepal,Concluded,Y,2019-05-20 00:00:00,Y,Nepal,NPL,pycountry,2019,5,20,No
 401,446,ARB/19/14,Impresa Pizzarotti & C. S.p.A.,Y,Kingdom of Morocco,Concluded,Y,2019-05-20 00:00:00,Y,Morocco,MAR,pycountry,2019,5,20,No
@@ -403,6 +413,7 @@
 411,457,ARB/19/4,"Canepa Green Energy Opportunities I, S.à r.l. and Canepa Green Energy Opportunities II, S.à r.l.",Y,Kingdom of Spain,Pending,Y,2019-02-25 00:00:00,Y,Spain,ESP,pycountry,2019,2,25,No
 412,459,ARB(AF)/19/1,Alois Schönberger,Y,Republic of Tajikistan,Concluded,Y,2019-02-15 00:00:00,Y,Tajikistan,TJK,pycountry,2019,2,15,No
 413,460,UNCT/18/4,Alicia Grace and others,Y,United Mexican States,Concluded,Y,2018-06-19 00:00:00,Y,Mexico,MEX,pycountry,2018,6,19,Yes
+414,461,ARB/19/3,Energy Utility Corporation Limited,Y,KivuWatt Limited,Concluded,Y,2019-01-17 00:00:00,Y,Rwanda,,excluded,2019,1,17,No
 415,462,ARB/19/2,Scholz Holding GmbH,Y,Kingdom of Morocco,Concluded,Y,2019-01-03 00:00:00,Y,Morocco,MAR,pycountry,2019,1,3,No
 416,463,ARB/19/1,"Legacy Vulcan, LLC",Y,United Mexican States,Pending,Y,2019-01-03 00:00:00,Y,Mexico,MEX,pycountry,2019,1,3,Yes
 417,464,ARB/18/49,Smurfit Holdings B.V.,Y,Bolivarian Republic of Venezuela,Pending,Y,2018-12-28 00:00:00,Y,"Venezuela, Bolivarian Republic of",VEN,pycountry,2018,12,28,No
@@ -628,6 +639,7 @@
 637,788,ARB/15/3,Abed El Jaouni,Y,Lebanese Republic,Concluded,Y,2015-01-16 00:00:00,Y,Lebanon,LBN,pycountry,2015,1,16,No
 638,790,ARB/15/2,"Lighthouse Corporation Pty Ltd and Lighthouse Corporation Ltd, IBC",Y,Democratic Republic of Timor-Leste,Concluded,Y,2015-01-14 00:00:00,Y,Timor-Leste,TLS,pycountry,2015,1,14,Yes
 639,791,ARB/15/1,"Stadtwerke München GmbH, RWE Innogy GmbH, and others",Y,Kingdom of Spain,Concluded,Y,2015-01-07 00:00:00,Y,Spain,ESP,pycountry,2015,1,7,No
+640,793,ARB/14/35,Baymina Enerji Anonim Şirketi,Y,Boru Hatları ile Petrol Taşıma Anonim Şirketi,Concluded,Y,2014-12-30 00:00:00,Y,Turkey,,unmatched,2014,12,30,No
 641,795,ARB/14/34,RWE Innogy GmbH and RWE Innogy Aersa S.A.U.,Y,Kingdom of Spain,Concluded,Y,2014-12-23 00:00:00,Y,Spain,ESP,pycountry,2014,12,23,No
 642,797,ARB/14/33,"IBT Group, LLC, Constructor, Consulting and Engineering (Panamá), S.A., and International Business and Trade, LLC.",Y,Republic of Panama,Concluded,Y,2014-12-19 00:00:00,Y,Panama,PAN,pycountry,2014,12,19,No
 643,798,ARB/14/32,Casinos Austria International GmbH and Casinos Austria Aktiengesellschaft,Y,Argentine Republic,Concluded,Y,2014-12-18 00:00:00,Y,Argentina,ARG,pycountry,2014,12,18,No
@@ -639,6 +651,7 @@
 649,808,ARB/14/27,Zelena N.V. and Energo-Zelena d.o.o Inđija,Y,Republic of Serbia,Concluded,Y,2014-11-07 00:00:00,Y,Serbia,SRB,pycountry,2014,11,7,No
 650,809,ARB/14/26,"Albaniabeg Ambient Sh.p.k, M. Angelo Novelli and Costruzioni S.r.l.",Y,Republic of Albania ,Concluded,Y,2014-11-07 00:00:00,Y,Albania,ALB,pycountry,2014,11,7,No
 651,811,ARB/14/25,"Ansung Housing Co., Ltd.",Y,People's Republic of China ,Concluded,Y,2014-11-04 00:00:00,Y,China,CHN,pycountry,2014,11,4,No
+652,812,ARB/10/18,Niko Resources (Bangladesh) Ltd.,Y,"Bangladesh Oil Gas and Mineral Corporation (Petrobangla), Bangladesh Petroleum Exploration and Production Company Limited (Bapex)",Concluded,Y,2010-07-28 00:00:00,Y,Bangladesh,,excluded,2010,7,28,Yes
 653,814,ARB/14/24,United Utilities (Tallinn) B.V. and Aktsiaselts Tallinna Vesi,Y,Republic of Estonia,Concluded,Y,2014-10-24 00:00:00,Y,Estonia,EST,pycountry,2014,10,24,No
 654,815,ARB/14/23,Tamagot Bumi S.A. and Bumi Mauritania S.A.,Y,Islamic Republic of Mauritania,Concluded,Y,2014-10-20 00:00:00,Y,Mauritania,MRT,pycountry,2014,10,20,Yes
 655,816,ARB/12/1,Tethyan Copper Company Pty Limited,Y,Islamic Republic of Pakistan,Concluded,Y,2012-01-12 00:00:00,Y,Pakistan,PAK,pycountry,2012,1,12,Yes
@@ -685,6 +698,7 @@
 696,884,ARB/13/27,"Marfin Investment Group Holdings S.A., Alexandros Bakatselos and others ",Y,Republic of Cyprus,Concluded,Y,2013-09-27 00:00:00,Y,Cyprus,CYP,pycountry,2013,9,27,No
 697,885,ARB/13/26,"Spentex Netherlands, B.V.",Y,Republic of Uzbekistan,Concluded,Y,2013-09-27 00:00:00,Y,Uzbekistan,UZB,pycountry,2013,9,27,No
 698,886,ARB/13/25,Tullow Uganda Operations Pty Ltd and Tullow Uganda Limited,Y,Republic of Uganda,Concluded,Y,2013-09-26 00:00:00,Y,Uganda,UGA,pycountry,2013,9,26,Yes
+699,887,ARB/13/24,Republic of Peru,Y,Caravelí Cotaruse Transmisora de Energía S.A.C.,Concluded,Y,2013-09-19 00:00:00,Y,Peru,,excluded,2013,9,19,No
 700,888,ARB/13/23,ASA International S.p.A.,Y,Arab Republic of Egypt,Concluded,Y,2013-09-13 00:00:00,Y,Egypt,EGY,pycountry,2013,9,13,No
 701,889,ARB/13/22,Erbil Serter,Y,French Republic,Concluded,Y,2013-09-10 00:00:00,Y,France,FRA,pycountry,2013,9,10,No
 702,890,ARB/13/21,Edenred S.A.,Y,Hungary,Concluded,Y,2013-09-09 00:00:00,Y,Hungary,HUN,pycountry,2013,9,9,No
@@ -724,6 +738,7 @@
 736,940,ARB/12/30,Lundin Tunisia B. V.,Y,Republic of Tunisia ,Concluded,Y,2012-10-02 00:00:00,Y,Tunisia,TUN,pycountry,2012,10,2,Yes
 737,941,ARB/12/29,"Ping An Life Insurance Company of China, Limited and Ping An Insurance (Group) Company of China, Limited",Y,Kingdom of Belgium,Concluded,Y,2012-09-19 00:00:00,Y,Belgium,BEL,pycountry,2012,9,19,No
 738,942,ARB(AF)/12/6,Lao Holdings N.V. ,Y,Lao People’s Democratic Republic ,Concluded,Y,2012-09-12 00:00:00,Y,Laos,,alias,2012,9,12,No
+739,943,ARB/12/28,Pluspetrol Perú Corporation and others,Y,Perupetro S.A. ,Concluded,Y,2012-09-11 00:00:00,Y,Peru,,excluded,2012,9,11,Yes
 740,944,ARB/12/27,Bidzina Ivanishvili,Y,Georgia,Concluded,Y,2012-09-10 00:00:00,Y,Georgia,GEO,pycountry,2012,9,10,No
 741,945,ARB/12/26,Sudapet Company Limited,Y,Republic of South Sudan,Concluded,Y,2012-08-29 00:00:00,Y,South Sudan,SSD,pycountry,2012,8,29,Yes
 742,946,ARB/12/25,Marco Gavazzi and Stefano Gavazzi ,Y,Romania,Concluded,Y,2012-08-27 00:00:00,Y,Romania,ROU,pycountry,2012,8,27,No
@@ -737,6 +752,7 @@
 750,959,ARB/12/18,Valle Verde Sociedad Financiera S.L. ,Y,Bolivarian Republic of Venezuela,Concluded,Y,2012-07-25 00:00:00,Y,"Venezuela, Bolivarian Republic of",VEN,pycountry,2012,7,25,No
 751,960,ARB/12/17,"Inversión y Gestión de Bienes, IGB, S.L. and IGB18 Las Rozas, S.L.",Y,Kingdom of Spain ,Concluded,Y,2012-07-09 00:00:00,Y,Spain,ESP,pycountry,2012,7,9,No
 752,961,ARB/12/16,"Novera AD, Novera Properties B.V. and Novera Properties N.V.",Y,Republic of Bulgaria,Concluded,Y,2012-07-03 00:00:00,Y,Bulgaria,BGR,pycountry,2012,7,3,No
+753,962,CONC(AF)/12/2,Republic of Equatorial Guinea,Y,CMS Energy Corporation and others ,Concluded,Y,2012-06-29 00:00:00,Y,United States,,excluded,2012,6,29,Yes
 754,963,ARB/12/15,Veolia Propreté,Y,Arab Republic of Egypt,Concluded,Y,2012-06-25 00:00:00,Y,Egypt,EGY,pycountry,2012,6,25,No
 755,964,ARB/12/14 and 12/40,"Churchill Mining Plc and Planet Mining Pty Ltd, formerly ARB/12/14",Y,Republic of Indonesia,Concluded,Y,2012-06-22 00:00:00,Y,Indonesia,IDN,pycountry,2012,6,22,Yes
 756,966,ARB(AF)/12/4,Telefónica S.A. ,Y,United Mexican States ,Concluded,Y,2012-06-21 00:00:00,Y,Mexico,MEX,pycountry,2012,6,21,No
@@ -799,6 +815,7 @@
 813,1045,ARB/10/23,"TECO Guatemala Holdings, LLC",Y,Republic of Guatemala,Concluded,Y,2010-11-23 00:00:00,Y,Guatemala,GTM,pycountry,2010,11,23,No
 814,1051,ARB/10/22,Ömer Dede and Serdar Elhüseyni,Y,Romania ,Concluded,Y,2010-11-19 00:00:00,Y,Romania,ROU,pycountry,2010,11,19,No
 815,1052,ARB/10/21,"International Quantum Resources Limited, Frontier SPRL and Compagnie Minière de Sakania SPRL",Y,Democratic Republic of the Congo,Concluded,Y,2010-10-22 00:00:00,Y,Congo,COG,embedded_pycountry,2010,10,22,Yes
+816,1053,ARB/10/20,Standard Chartered Bank (Hong Kong) Limited,Y,Tanzania Electric Supply Company Limited,Concluded,Y,2010-10-01 00:00:00,Y,Tanzania,,excluded,2010,10,1,No
 817,1055,ARB(AF)/10/1,David Minnotte and Robert Lewis,Y,Republic of Poland,Concluded,Y,2010-09-14 00:00:00,Y,Poland,POL,pycountry,2010,9,14,No
 818,1057,ARB/10/19,Flughafen Zürich A.G. and Gestión e Ingeniería IDC S.A.,Y,Bolivarian Republic of Venezuela,Concluded,Y,2010-08-09 00:00:00,Y,"Venezuela, Bolivarian Republic of",VEN,pycountry,2010,8,9,No
 819,1059,ARB/10/17,Renée Rose Levy de Levi,Y,Republic of Peru,Concluded,Y,2010-07-20 00:00:00,Y,Peru,PER,pycountry,2010,7,20,No
@@ -807,6 +824,7 @@
 822,1065,ARB/10/14,Opic Karimum Corporation,Y,Bolivarian Republic of Venezuela,Concluded,Y,2010-06-16 00:00:00,Y,"Venezuela, Bolivarian Republic of",VEN,pycountry,2010,6,16,Yes
 823,1066,ARB/10/13,"Hassan Awdi, Enterprise Business Consultants, Inc. and Alfa El Corporation",Y,Romania,Concluded,Y,2010-06-16 00:00:00,Y,Romania,ROU,pycountry,2010,6,16,No
 824,1067,ARB/10/12,Standard Chartered Bank,Y,United Republic of Tanzania,Concluded,Y,2010-06-11 00:00:00,Y,"Tanzania, United Republic of",TZA,pycountry,2010,6,11,No
+825,1069,ARB/10/11,Niko Resources (Bangladesh) Ltd.,Y,"Bangladesh Petroleum Exploration & Production Company Limited (""Bapex"") ",Concluded,Y,2010-05-27 00:00:00,Y,Bangladesh,,excluded,2010,5,27,Yes
 826,1070,ARB/10/10,Olyana Holdings LLC ,Y,Republic of Rwanda,Concluded,Y,2010-04-16 00:00:00,Y,Rwanda,RWA,embedded_pycountry,2010,4,16,No
 827,1071,ARB/10/9,"Universal Compression International Holdings, S.L.U.",Y,Bolivarian Republic of Venezuela,Concluded,Y,2010-04-12 00:00:00,Y,"Venezuela, Bolivarian Republic of",VEN,pycountry,2010,4,12,Yes
 828,1072,ARB/10/8,Pan American Energy LLC,Y,Plurinational State of Bolivia,Concluded,Y,2010-04-12 00:00:00,Y,"Bolivia, Plurinational State of",BOL,pycountry,2010,4,12,Yes
@@ -852,6 +870,7 @@
 868,1131,ARB/08/13,Alapli Elektrik B.V.,Y,Republic of Turkey,Concluded,Y,2008-08-27 00:00:00,Y,Turkey,,alias,2008,8,27,No
 869,1133,ARB/08/12,Caratube International Oil Company LLP,Y,Republic of Kazakhstan,Concluded,Y,2008-08-26 00:00:00,Y,Kazakhstan,KAZ,pycountry,2008,8,26,Yes
 870,1135,ARB/08/11,"Bosh International, Inc. and B&P, LTD Foreign Investments Enterprise",Y,Ukraine,Concluded,Y,2008-08-21 00:00:00,Y,Ukraine,UKR,pycountry,2008,8,21,No
+871,1136,ARB/08/10,"Repsol YPF Ecuador, S.A. and others",Y,Republic of Ecuador and Empresa Estatal Petróleos del Ecuador (PetroEcuador),Concluded,Y,2008-08-08 00:00:00,Y,Ecuador,,excluded,2008,8,8,Yes
 872,1137,ARB/08/9,Ambiente Ufficio S.p.A. and others,Y,Argentine Republic,Concluded,Y,2008-07-28 00:00:00,Y,Argentina,ARG,pycountry,2008,7,28,No
 873,1138,ARB/08/8,Inmaris Perestroika Sailing Maritime Services GmbH and others,Y,Ukraine,Concluded,Y,2008-06-16 00:00:00,Y,Ukraine,UKR,pycountry,2008,6,16,No
 874,1139,ARB/08/7,Itera International Energy LLC and Itera Group NV,Y,Georgia,Concluded,Y,2008-06-05 00:00:00,Y,Georgia,GEO,pycountry,2008,6,5,Yes
@@ -920,6 +939,7 @@
 937,1228,ARB/01/14,"F-W Oil Interests, Inc.",Y,Republic of Trinidad & Tobago ,Concluded,Y,2001-11-29 00:00:00,Y,Trinidad and Tobago,TTO,alias,2001,11,29,Yes
 938,1229,ARB/01/13,SGS Société Générale de Surveillance S.A. ,Y,Islamic Republic of Pakistan ,Concluded,Y,2001-11-21 00:00:00,Y,Pakistan,PAK,pycountry,2001,11,21,No
 939,1230,ARB/01/11,"Noble Ventures, Inc.",Y,Romania ,Concluded,Y,2001-10-17 00:00:00,Y,Romania,ROU,pycountry,2001,10,17,No
+940,1232,ARB/01/10,Repsol YPF Ecuador S.A.,Y,Empresa Estatal Petróleos del Ecuador (Petroecuador),Concluded,Y,2001-10-05 00:00:00,Y,Ecuador,,excluded,2001,10,5,Yes
 941,1234,ARB/01/9,Booker plc ,Y,Co-operative Republic of Guyana ,Concluded,Y,2001-09-18 00:00:00,Y,Guyana,GUY,embedded_pycountry,2001,9,18,No
 942,1235,ARB/01/7,MTD Equity Sdn. Bhd. and MTD Chile S.A. ,Y,Republic of Chile ,Concluded,Y,2001-08-06 00:00:00,Y,Chile,CHL,pycountry,2001,8,6,No
 943,1237,ARB/01/6,"AIG Capital Partners, Inc. and CJSC Tema Real Estate Company ",Y,Republic of Kazakhstan,Concluded,Y,2001-06-04 00:00:00,Y,Kazakhstan,KAZ,pycountry,2001,6,4,No
@@ -947,6 +967,7 @@
 965,1264,ARB/99/1,Mobil Argentina S.A.,Y,Argentine Republic ,Concluded,Y,1999-04-09 00:00:00,Y,Argentina,ARG,pycountry,1999,4,9,Yes
 966,1265,ARB(AF)/99/2,Mondev International Ltd.,Y,United States of America ,Concluded,Y,1999-09-20 00:00:00,Y,United States,USA,pycountry,1999,9,20,No
 967,1266,ARB(AF)/99/1,Marvin Roy Feldman Karpa ,Y,United Mexican States ,Concluded,Y,1999-05-27 00:00:00,Y,Mexico,MEX,pycountry,1999,5,27,No
+968,1270,ARB/98/8,Tanzania Electric Supply Company Limited ,Y,Independent Power Tanzania Limited ,Concluded,Y,1998-12-07 00:00:00,Y,Tanzania,,excluded,1998,12,7,No
 969,1272,ARB/98/7,"Banro American Resources, Inc. and Société Aurifère du Kivu et du Maniema S.A.R.L.",Y,Democratic Republic of the Congo ,Concluded,Y,1998-10-28 00:00:00,Y,Congo,COG,embedded_pycountry,1998,10,28,Yes
 970,1273,ARB/98/6,Compagnie Minière Internationale Or S.A.,Y,Republic of Peru ,Concluded,Y,1998-10-28 00:00:00,Y,Peru,PER,pycountry,1998,10,28,Yes
 971,1274,ARB/98/5,Eudoro A. Olguín ,Y,Republic of Paraguay ,Concluded,Y,1998-08-26 00:00:00,Y,Paraguay,PRY,pycountry,1998,8,26,No
@@ -976,6 +997,7 @@
 995,1308,CONC/94/1,SEDITEX Engineering Beratungsgesellschaft für dieTextilindustrie m.b.H.,Y,Madagascar,Concluded,Y,1994-06-13 00:00:00,Y,Madagascar,MDG,pycountry,1994,6,13,No
 996,1309,ARB/94/1,Philippe Gruslin ,Y,Malaysia,Concluded,Y,1994-01-13 00:00:00,Y,Malaysia,MYS,pycountry,1994,1,13,No
 997,1310,ARB/93/1,"American Manufacturing & Trading, Inc.",Y,Democratic Republic of the Congo ,Concluded,Y,1993-02-02 00:00:00,Y,Congo,COG,embedded_pycountry,1993,2,2,No
+998,1312,ARB/92/2,Scimitar Exploration Limited ,Y,"Bangladesh and Bangladesh Oil, Gas and Mineral Corporation",Concluded,Y,1992-11-03 00:00:00,Y,Bangladesh,,excluded,1992,11,3,Yes
 999,1313,ARB/92/1,Vacuum Salt Products Ltd.,Y,Republic of Ghana ,Concluded,Y,1992-06-11 00:00:00,Y,Ghana,GHA,pycountry,1992,6,11,Yes
 1000,1314,ARB/89/1,Manufacturers Hanover Trust Company ,Y,Arab Republic of Egypt and General Authority for Investment and Free Zones,Concluded,Y,1989-06-15 00:00:00,Y,Egypt,EGY,embedded_pycountry,1989,6,15,No
 1001,1315,ARB/87/4,"Occidental of Pakistan, Inc.",Y,Islamic Republic of Pakistan ,Concluded,Y,1987-10-07 00:00:00,Y,Pakistan,PAK,pycountry,1987,10,7,Yes
@@ -997,6 +1019,7 @@
 1017,1343,ARB/78/1,Guadalupe Gas Products Corporation,Y,Nigeria ,Concluded,Y,1978-03-20 00:00:00,Y,Nigeria,NGA,pycountry,1978,3,20,Yes
 1018,1344,ARB/77/2,S.A.R.L. Benvenuti & Bonfant ,Y,People's Republic of the Congo,Concluded,Y,1977-12-15 00:00:00,Y,Congo,COG,embedded_pycountry,1977,12,15,No
 1019,1345,ARB/77/1,AGIP S.p.A.,Y,People's Republic of the Congo,Concluded,Y,1977-11-04 00:00:00,Y,Congo,COG,embedded_pycountry,1977,11,4,Yes
+1020,1346,ARB/76/1,Gabon ,Y,Société Serete S.A.,Concluded,Y,1976-10-05 00:00:00,Y,France,,excluded,1976,10,5,No
 1021,1347,ARB/74/4,Reynolds Jamaica Mines Limited and  Reynolds Metals Company,Y,Jamaica,Concluded,Y,1974-06-21 00:00:00,Y,Jamaica,JAM,pycountry,1974,6,21,Yes
 1022,1348,ARB/74/3,Kaiser Bauxite Company ,Y,Jamaica,Concluded,Y,1974-06-21 00:00:00,Y,Jamaica,JAM,pycountry,1974,6,21,Yes
 1023,1349,ARB/74/2,"Alcoa Minerals of Jamaica, Inc. ",Y,Jamaica,Concluded,Y,1974-06-21 00:00:00,Y,Jamaica,JAM,pycountry,1974,6,21,Yes
@@ -1025,9 +1048,11 @@
 1046,1379,ARB/07/6,Tza Yap Shum ,Y,Republic of Peru ,Concluded,Y,2007-02-12 00:00:00,Y,Peru,PER,pycountry,2007,2,12,No
 1047,1381,ARB/07/5,Abaclat and others ,Y,Argentine Republic ,Concluded,Y,2007-02-07 00:00:00,Y,Argentina,ARG,pycountry,2007,2,7,No
 1048,1382,ARB/07/4,Eni Dación B.V. ,Y,Bolivarian Republic of Venezuela,Concluded,Y,2007-02-06 00:00:00,Y,"Venezuela, Bolivarian Republic of",VEN,pycountry,2007,2,6,Yes
+1049,1383,ARB/07/3,Government of the Province of East Kalimantan,Y,PT Kaltim Prima Coal and others ,Concluded,Y,2007-01-18 00:00:00,Y,Indonesia,,excluded,2007,1,18,Yes
 1050,1384,ARB/07/2,RSM Production Corporation ,Y,Central African Republic ,Concluded,Y,2007-01-18 00:00:00,Y,Central African Republic,CAF,pycountry,2007,1,18,Yes
 1051,1386,ARB/07/1,Fondel Metal Participations B.V. ,Y,Republic of Azerbaijan ,Concluded,Y,2007-01-09 00:00:00,Y,Azerbaijan,AZE,pycountry,2007,1,9,Yes
 1052,1387,ARB(AF)/07/1,"Piero Foresti, Laura de Carli and others",Y,Republic of South Africa ,Concluded,Y,2007-01-08 00:00:00,Y,South Africa,ZAF,pycountry,2007,1,8,Yes
+1053,1388,ARB/06/21,City Oriente Limited,Y,Republic of Ecuador and Empresa Estatal Petróleos del Ecuador (Petroecuador),Concluded,Y,2006-12-19 00:00:00,Y,Ecuador,,excluded,2006,12,19,Yes
 1054,1389,ARB/06/19,"Nations Energy, Inc. and others ",Y,Republic of Panama ,Concluded,Y,2006-12-11 00:00:00,Y,Panama,PAN,pycountry,2006,12,11,No
 1055,1391,ARB/06/18,Joseph C. Lemire ,Y,Ukraine,Concluded,Y,2006-12-08 00:00:00,Y,Ukraine,UKR,pycountry,2006,12,8,No
 1056,1393,ARB(AF)/06/2,"Cementownia ""Nowa Huta"" S.A.",Y,Republic of Turkey ,Concluded,Y,2006-11-16 00:00:00,Y,Turkey,,alias,2006,11,16,No
@@ -1060,6 +1085,7 @@
 1083,1432,ARB/05/15,Waguih Elie George Siag and Clorinda Vecchi ,Y,Arab Republic of Egypt ,Concluded,Y,2005-08-05 00:00:00,Y,Egypt,EGY,pycountry,2005,8,5,No
 1084,1434,ARB/05/14,RSM Production Corporation ,Y,Grenada ,Concluded,Y,2005-08-05 00:00:00,Y,Grenada,GRD,pycountry,2005,8,5,Yes
 1085,1436,ARB/05/13,EDF (Services) Limited ,Y,Romania,Concluded,Y,2005-07-29 00:00:00,Y,Romania,ROU,pycountry,2005,7,29,No
+1086,1437,ARB/05/12,Noble Energy Inc. and MachalaPower Cía. Ltd.,Y,Republic of Ecuador and Consejo Nacional de Electricidad,Concluded,Y,2005-07-29 00:00:00,Y,Ecuador,,excluded,2005,7,29,No
 1087,1438,ARB/05/11,Asset Recovery Trust S.A. ,Y,Argentine Republic ,Concluded,Y,2005-06-23 00:00:00,Y,Argentina,ARG,pycountry,2005,6,23,No
 1088,1439,ARB/05/9,"Empresa Eléctrica del Ecuador, Inc. (EMELEC) ",Y,Republic of Ecuador ,Concluded,Y,2005-05-26 00:00:00,Y,Ecuador,ECU,pycountry,2005,5,26,No
 1089,1440,ARB/05/7,Saipem S.p.A. ,Y,People's Republic of Bangladesh,Concluded,Y,2005-04-25 00:00:00,Y,Bangladesh,BGD,pycountry,2005,4,25,Yes
