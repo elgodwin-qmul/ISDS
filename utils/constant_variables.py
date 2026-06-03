@@ -27,3 +27,9 @@ ISCID_MANUAL_COUNTRY_CLEANUP = {
     "ARB/19/3": "Rwanda",
     "CONC(AF)/12/2": "United States"
 }
+
+# Manually looked up dates related to the individual cases in the original ICSID dataset
+MANUAL_DATE_CLEANUP = {
+    "UNCT/23/4": "2023-11-30",
+    "ADM/21/1": "2020-08-07"
+}

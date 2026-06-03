@@ -164,3 +164,161 @@ The workflow is fully reproducible and structured using:
 * Intermediate cleaned datasets
 * Deterministic transformation steps
 * Manual reconciliation dictionaries for unresolved country and date entries
+
+
+
+# UNCTAD ISDS Dataset Integration
+
+In addition to the ICSID API dataset, this project integrates dispute data from the UNCTAD ISDS Navigator to create a broader and cross-validated ISDS analytical dataset.
+
+---
+
+## 8. UNCTAD Dataset Extraction
+
+The UNCTAD ISDS Navigator dataset was imported from a structured Excel workbook.
+
+The workflow separates:
+
+* Historical UNCTAD data up to and including 2023
+* Manually collected post-2023 cases extracted directly from the UNCTAD website
+
+Both datasets were loaded independently and combined into a unified working dataframe.
+
+---
+
+## 9. ICSID Case Number Extraction
+
+ICSID arbitration case numbers were extracted from the `FULL CASE NAME` column using regular expressions.
+
+The extraction pipeline supports:
+
+* Standard ICSID arbitration numbers
+* Additional Facility proceedings (`ARB(AF)`)
+
+Example extracted formats:
+
+```text
+ARB/12/4
+ARB(AF)/20/1
+```
+
+The extracted case numbers were stored in a standardized `CASE NO.` field.
+
+The historical and post-2023 UNCTAD datasets were then concatenated into a single analytical dataset.
+
+---
+
+## 10. Country Standardization
+
+Respondent-state names in the UNCTAD dataset were standardized using the same reusable country-normalization utility developed for the ICSID pipeline.
+
+The extraction workflow:
+
+* Parsed respondent-state names from the `RESPONDENT STATE` column
+* Standardized sovereign country names
+* Generated ISO3 country codes
+* Recorded extraction methods for auditability
+
+The cleaning pipeline used:
+
+* `pycountry`
+* Manual alias dictionaries
+* Embedded-country extraction logic
+* Regex-based normalization procedures
+
+---
+
+## 11. Manual Country Reconciliation
+
+Cases where no country could initially be extracted were isolated into a separate review dataset.
+
+Manual reconciliation was then performed using:
+
+* `SHORT CASE NAME`
+* `RESPONDENT STATE`
+
+A manual mapping dictionary was created and applied only to unresolved rows.
+
+All manually corrected entries were labeled with:
+
+```text
+extraction_method = "manual"
+```
+
+Following reconciliation, all UNCTAD cases were successfully assigned a standardized respondent country.
+
+---
+
+## 12. Mining-Sector Classification
+
+Mining-sector disputes were identified using the `ECONOMIC SECTOR` column.
+
+Cases were classified as mining-related if the sector description contained:
+
+```text
+Mining and quarrying
+```
+
+The workflow used regex-enabled string matching to handle inconsistent formatting patterns within the UNCTAD source data.
+
+Cases were labeled as:
+
+* `Yes` → mining-related dispute
+* `No` → non-mining dispute
+
+---
+
+## 13. ICSID–UNCTAD Dataset Crosswalk
+
+The UNCTAD dataset was cross-referenced against the cleaned ICSID dataset using arbitration case numbers.
+
+Using the standardized `CASE NO.` field, the workflow identified:
+
+* Cases already present in the ICSID dataset
+* Cases unique to the UNCTAD dataset
+
+This produced an overlap indicator column:
+
+```text
+IN ICSID DATA
+```
+
+with values:
+
+* `Yes`
+* `No`
+
+This crosswalk enables comparative analysis between the two institutional datasets.
+
+---
+
+## 14. PCA Case Number Recovery
+
+Some UNCTAD entries lacked standardized case numbers in the primary case-number field.
+
+Additional Permanent Court of Arbitration (PCA) case numbers were recovered from the `Notes` column using regex extraction.
+
+Example extracted format:
+
+```text
+PCA Case No. 2019-12
+```
+
+Recovered PCA identifiers were inserted into the `CASE NO.` column to improve dataset completeness and downstream matching reliability.
+
+---
+
+## Result
+
+The integrated UNCTAD workflow produces a cleaned and harmonized ISDS dataset containing:
+
+* Standardized respondent countries
+* ISO3 country codes
+* Mining-sector classification
+* ICSID overlap indicators
+* Extracted arbitration case numbers
+* PCA case identifiers
+* Audit trails for manual country reconciliation
+
+The resulting dataset is structured for empirical ISDS analysis and institutional comparison across arbitration forums.
+
