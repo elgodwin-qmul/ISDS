@@ -1,5 +1,5 @@
 # Manually looked up countries related to the individual cases in the original ICSID dataset
-ISCID_MANUAL_COUNTRY_CLEANUP = {
+ICSID_MANUAL_COUNTRY_CLEANUP = {
     "ARB/24/39": "Bangladesh",
     "ARB/22/4": "Bangladesh",
     "ARB/19/18": "Bangladesh",
@@ -29,7 +29,11 @@ ISCID_MANUAL_COUNTRY_CLEANUP = {
 }
 
 # Manually looked up dates related to the individual cases in the original ICSID dataset
-MANUAL_DATE_CLEANUP = {
+ICSID_MANUAL_DATE_CLEANUP = {
     "UNCT/23/4": "2023-11-30",
     "ADM/21/1": "2020-08-07"
+}
+
+PCA_MANUAL_DATE_CLEANUP ={
+    "2023-03": "2023"
 }

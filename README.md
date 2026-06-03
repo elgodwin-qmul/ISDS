@@ -322,3 +322,138 @@ The integrated UNCTAD workflow produces a cleaned and harmonized ISDS dataset co
 
 The resulting dataset is structured for empirical ISDS analysis and institutional comparison across arbitration forums.
 
+# PCA Investor–State Arbitration Dataset Integration
+
+To supplement the ICSID and UNCTAD datasets, the project also incorporates investor–state arbitration data from the Permanent Court of Arbitration (PCA).
+
+This workflow standardizes PCA case metadata and integrates it into the broader ISDS analytical framework.
+
+---
+
+## 15. PCA Dataset Extraction
+
+The PCA investor–state arbitration dataset was imported from a structured Excel workbook.
+
+The workflow retained a focused subset of analytical variables:
+
+* Respondent state(s)
+* Arbitration case number
+* Proceeding commencement date
+* Economic sector classification
+
+The working dataset was reduced to only the columns required for downstream harmonization and comparison.
+
+---
+
+## 16. Missing Date Validation and Manual Repair
+
+The PCA dataset was audited for missing commencement dates.
+
+Where dates were absent, the workflow manually reconstructed dates using information embedded in PCA case-number conventions.
+
+Manual corrections were stored in:
+
+```text id="2klr8d"
+utils/constant_variables.py
+```
+
+through a dedicated dictionary:
+
+```text id="s71z8g"
+PCA_MANUAL_DATE_CLEANUP
+```
+
+Corrections were applied only to rows with missing dates and matching PCA case numbers.
+
+Following reconciliation:
+
+* all commencement dates were successfully populated
+* all values were standardized into datetime format using Pandas
+
+---
+
+## 17. Mining-Sector Classification
+
+Mining-sector disputes were identified within the PCA dataset using the:
+
+```text id="rt6syw"
+Subject matter or economic sector
+```
+
+column.
+
+Cases containing:
+
+```text id="mjlwm6"
+Mining and quarrying
+```
+
+were labeled as mining disputes.
+
+The workflow produced a binary mining indicator:
+
+* `Yes`
+* `No`
+
+This enabled direct comparability with the ICSID and UNCTAD mining classifications.
+
+---
+
+## 18. PCA–UNCTAD Crosswalk
+
+PCA arbitration case numbers were compared against the harmonized UNCTAD dataset.
+
+Using standardized case identifiers, the workflow identified:
+
+* overlapping cases already present in UNCTAD
+* PCA-exclusive investor–state disputes
+
+An overlap indicator column:
+
+```text id="7y2y2u"
+IN UNCTAD
+```
+
+was created with values:
+
+* `Yes`
+* `No`
+
+This process identified additional investor–state arbitration proceedings not captured in the UNCTAD dataset.
+
+---
+
+## 19. Country Standardization
+
+Respondent-state names in the PCA dataset were standardized using the shared country-normalization utility developed for the broader ISDS workflow.
+
+The extraction process:
+
+* parsed sovereign respondent states
+* standardized country names
+* generated ISO3 country codes
+* recorded extraction methods for transparency and auditability
+
+The cleaning pipeline used:
+
+* `pycountry`
+* manual aliases
+* embedded-country extraction
+* regex-based normalization
+
+Following standardization, all PCA cases were successfully assigned respondent-country information.
+
+---
+
+## Result
+
+The PCA integration workflow produces a cleaned and harmonized arbitration dataset containing:
+
+* standardized respondent countries
+* ISO3 country codes
+* cleaned commencement dates
+* mining-sector indicators
+* UNCTAD overlap indicators
+* PCA case identifiers
+
+This integration expands the project beyond ICSID-only disputes and enables broader institutional comparison across investor–state arbitration forums.
