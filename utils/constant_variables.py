@@ -37,3 +37,63 @@ ICSID_MANUAL_DATE_CLEANUP = {
 PCA_MANUAL_DATE_CLEANUP ={
     "2023-03": "2023"
 }
+
+# Manually add economic classification for all missing cases in the dataset
+ECONOMY_MAP_MANUAL = {
+
+    # Bolivia
+    "Bolivia, Plurinational State Of":
+        "Developing economies",
+
+    # Iran
+    "Iran, Islamic Republic Of":
+        "Developing economies",
+
+    # Côte d'Ivoire
+    "Côte D'Ivoire": "Developing economies",
+
+    # Laos
+    "Laos": "Developing economies",
+    "Lao People'S Democratic Republic":
+        "Developing economies",
+
+    # St Kitts
+    "Saint Kitts And Nevis":
+        "Developing economies",
+
+    # Tanzania
+    "Tanzania": "Developing economies",
+    "Tanzania, United Republic Of": "Developing economies",
+
+    # Trinidad
+    "Trinidad And Tobago": "Developing economies",
+
+    # Venezuela
+    "Venezuela": "Developing economies",
+    "Venezuela, Bolivarian Republic Of": "Developing economies",
+
+    # Türkiye / Turkey
+    "Türkiye": "Developing economies",
+    "Turkey": "Developing economies",
+    
+## Developed economies
+    # Bosnia
+    "Bosnia And Herzegovina": "Developed economies",
+
+    # South Korea
+    "Korea, Republic Of": "Developed economies",
+    "South Korea": "Developed economies",
+
+    # Moldova
+    "Moldova": "Developed economies",
+    "Moldova, Republic Of": "Developed economies",
+    
+    # Netherlands
+    "Netherlands": "Developed economies",
+
+    # Russia
+    "Russia": "Developed economies",
+
+    # EU
+    "European Union": "Developed economies"
+}
