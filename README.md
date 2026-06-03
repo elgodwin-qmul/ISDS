@@ -1,4 +1,6 @@
-# Workflow Summary
+# ISDS Mining Disputes Dataset
+
+## Overview
 
 This project builds a harmonized investor–state dispute settlement (ISDS) dataset by integrating arbitration case data from:
 
@@ -6,362 +8,219 @@ This project builds a harmonized investor–state dispute settlement (ISDS) data
 * UNCTAD ISDS Navigator
 * Permanent Court of Arbitration (PCA)
 
-The workflow performs the following steps:
-
-1. **Data Extraction**
-
-   * Retrieve ICSID case data from the ICSID API
-   * Import UNCTAD and PCA datasets from structured Excel sources
-   * Archive raw source data for reproducibility
-
-2. **Data Normalization**
-
-   * Expand nested JSON structures into flat analytical tables
-   * Standardize respondent-state names using a reusable country-cleaning utility built with `pycountry`
-   * Generate ISO3 country codes
-   * Reconcile unresolved country entries through manual validation dictionaries
-
-3. **Date Cleaning**
-
-   * Parse and validate arbitration registration/commencement dates
-   * Identify missing and malformed values
-   * Apply reproducible manual corrections where necessary
-   * Engineer year, month, and day variables for temporal analysis
-
-4. **Mining-Sector Classification**
-
-   * Identify mining-related disputes using:
-
-     * ICSID mining-sector API filters
-     * UNCTAD economic-sector labels
-     * PCA sector classifications
-   * Create harmonized binary mining indicators across datasets
-
-5. **Dataset Crosswalking**
-
-   * Match arbitration case numbers across ICSID, UNCTAD, and PCA datasets
-   * Identify overlapping and institution-specific disputes
-   * Recover missing PCA case identifiers using regex extraction
-
-6. **Final Output**
-
-   * Produce cleaned and analysis-ready datasets containing:
-
-     * standardized respondent countries
-     * ISO3 country codes
-     * cleaned dates
-     * mining indicators
-     * institutional overlap indicators
-     * harmonized arbitration identifiers
-
-The resulting datasets are structured for empirical ISDS analysis, institutional comparison, and mining-sector dispute research.
-
-# Final Dataset Harmonization and Merge
-
-Following independent cleaning and standardization of the ICSID, UNCTAD, and PCA datasets, the project harmonizes all three sources into a single unified analytical dataset.
+The workflow produces a cleaned and analysis-ready dataset for empirical analysis of ISDS disputes, mining-sector arbitration, and respondent-state trends.
 
 ---
 
-## 20. Column Harmonization
+# Workflow Summary
 
-To ensure schema consistency across institutions, each dataset's key analytical columns were standardized into a shared structure.
+## 1. Data Extraction
 
-The harmonized schema includes:
+The pipeline ingests data from multiple institutional sources:
 
-| Standardized Column | Description                          |
-| ------------------- | ------------------------------------ |
-| `country_clean`     | Standardized respondent-state name   |
-| `case_number`       | Arbitration case identifier          |
-| `year`              | Year of case registration/initiation |
-| `mining_case`       | Mining-sector indicator              |
+* ICSID case data retrieved directly from the ICSID API
+* UNCTAD ISDS Navigator data imported from Excel workbooks
+* PCA investor–state arbitration data imported from Excel workbooks
 
-Institution-specific column mappings were defined for:
-
-* ICSID
-* UNCTAD
-* PCA
-
-This normalization step ensured interoperability across datasets prior to merging.
+Raw source files are archived for reproducibility.
 
 ---
 
-## 21. Cross-Institution Deduplication
+## 2. Data Cleaning and Standardization
 
-To avoid duplicate arbitration proceedings across institutions, the workflow applied sequential dataset filtering:
+The workflow standardizes and harmonizes datasets across institutions by:
 
-* All ICSID cases were retained
-* Only UNCTAD cases not already present in ICSID were retained
-* Only PCA cases not already present in UNCTAD were retained
+* Expanding nested JSON structures into flat analytical tables
+* Cleaning respondent-state names using reusable country utilities
+* Standardizing sovereign country names
+* Generating ISO3 country codes
+* Validating missing or malformed entries
+* Applying reproducible manual reconciliation dictionaries where automated extraction fails
 
-This produced a non-overlapping arbitration dataset while preserving institution-specific coverage.
+Country normalization is implemented using:
 
-Deduplication was performed using standardized arbitration case identifiers.
+* Python
+* Pandas
+* `pycountry`
+* Regex-based cleaning utilities
+
+### Example Country Standardization
+
+| Raw Input                   | Standardized Output |
+| --------------------------- | ------------------- |
+| `Republic of Korea`         | `South Korea`       |
+| `Republic of Turkey`        | `Turkey`            |
+| `Commonwealth of Australia` | `Australia`         |
 
 ---
 
-## 22. Unified ISDS Dataset Construction
+## 3. Date Validation and Repair
 
-The cleaned and deduplicated datasets were concatenated into a single master analytical dataframe.
+The workflow validates arbitration registration and commencement dates by:
 
-The final merged dataset contains:
+* Parsing datetime values
+* Identifying missing or malformed entries
+* Applying manual date repairs through reusable cleanup dictionaries
+* Engineering temporal variables including:
 
-* harmonized country identifiers
-* standardized arbitration case numbers
-* year variables
+  * year
+  * month
+  * day
+
+This ensures consistent longitudinal analysis across all institutional datasets.
+
+---
+
+## 4. Mining-Sector Classification
+
+Mining-sector disputes are identified using:
+
+* ICSID mining-sector API filters
+* UNCTAD economic-sector labels
+* PCA sector classifications
+
+Cases are standardized into a binary indicator:
+
+| Value | Meaning                |
+| ----- | ---------------------- |
+| `Yes` | Mining-related dispute |
+| `No`  | Non-mining dispute     |
+
+Regex-enabled matching is used to handle inconsistent sector-label formatting across datasets.
+
+---
+
+## 5. Dataset Crosswalking and Deduplication
+
+The workflow cross-references arbitration case numbers across institutions to identify:
+
+* overlapping disputes
+* institution-specific disputes
+* missing arbitration identifiers
+
+The harmonization process:
+
+* retains all ICSID cases
+* keeps only UNCTAD cases not already present in ICSID
+* keeps only PCA cases not already present in UNCTAD
+
+This produces a unified non-overlapping ISDS dataset.
+
+---
+
+## 6. Economy Classification Integration
+
+The final merged dataset integrates respondent-state economy classifications using UNCTAD country hierarchy data.
+
+The workflow:
+
+* extracts developed and developing economy labels
+* standardizes country names across datasets
+* merges classifications into the unified ISDS dataset
+* manually reconciles unresolved country-label mismatches
+
+This produces a new analytical variable:
+
+| Column                   | Description                              |
+| ------------------------ | ---------------------------------------- |
+| `economy_classification` | Developed or Developing economy grouping |
+
+---
+
+## 7. Unified Dataset Construction
+
+The cleaned ICSID, UNCTAD, and PCA datasets are harmonized into a single analytical dataframe containing:
+
+* standardized respondent countries
+* ISO3 country codes
+* harmonized case identifiers
+* cleaned temporal variables
 * mining-sector indicators
+* economy classifications
+* institutional overlap indicators
 
-The unified dataset was exported to:
+### Final Dataset Export
 
 ```text
 data/processed/MINING_CASES_202606.csv
 ```
 
-This dataset represents a consolidated cross-institution ISDS database suitable for:
-
-* mining-sector dispute analysis
-* temporal trend analysis
-* respondent-state analysis
-* institutional comparison
-* empirical ISDS research
-
-# Economy Classification Integration
-
-Following construction of the unified ISDS dataset, the workflow integrates UNCTAD country-level economy classifications to support comparative economic analysis.
-
 ---
-
-## 23. UNCTAD Economy Classification Extraction
-
-Country-level economy classifications were extracted from the UNCTAD country hierarchy dataset.
-
-The workflow filtered the hierarchy table to retain only the top-level economy groupings:
-
-* Developed economies
-* Developing economies
-
-These classifications were isolated into a dedicated interim dataset for downstream merging and reproducibility.
-
----
-
-## 24. Country Name Harmonization and Merge
-
-To ensure successful joins across datasets, country names in both datasets were standardized using:
-
-* whitespace trimming
-* title-case normalization
-
-The unified ISDS dataset was then merged with the UNCTAD economy-classification dataset using standardized country names.
-
-This merge added a new analytical variable:
-
-| Column                   | Description                                  |
-| ------------------------ | -------------------------------------------- |
-| `economy_classification` | UNCTAD economy grouping for respondent state |
-
-The merge was performed using a left join to preserve all arbitration cases.
-
----
-
-## 25. Missing Classification Validation and Manual Reconciliation
-
-Following the merge, the workflow audited all missing economy classifications.
-
-Most unresolved matches were caused by:
-
-* spelling inconsistencies
-* alternate sovereign naming conventions
-* geopolitical naming differences
-
-Examples included:
-
-* `Türkiye`
-* `South Korea`
-* `Laos`
-* `Venezuela`
-
-Manual reconciliation was performed using a dedicated mapping dictionary stored in:
-
-```text
-utils/constant_variables.py
-```
-
-through:
-
-```text
-ECONOMY_MAP_MANUAL
-```
-
-Manual mappings were applied only to rows missing an economy classification.
-
-Following reconciliation, all arbitration cases were successfully assigned an economy classification.
-
----
-
-## 26. Final Classification Cleanup
-
-The final economy classification labels were standardized through additional string cleaning operations.
-
-This included:
-
-* removal of redundant text such as:
-
-```text
-economies
-```
-
-* trimming leading and trailing whitespace across all string columns
-
-The resulting economy classification variable contains clean and analysis-ready labels suitable for:
-
-* descriptive statistics
-* comparative economic analysis
-* grouped mining-dispute analysis
-* visualization workflows
-
----
-
-## Final Analytical Dataset
-
-The final processed ISDS dataset now includes:
-
-* harmonized arbitration case identifiers
-* standardized respondent countries
-* ISO3 country codes
-* cleaned temporal variables
-* mining-sector indicators
-* institutional overlap indicators
-* UNCTAD economy classifications
-
-This produces a consolidated cross-institution investor–state dispute dataset ready for empirical analysis and research workflows.
 
 # Visualization and Exploratory Analysis
 
-The project includes reusable visualization utilities to support exploratory analysis and reproducible figure generation across the harmonized ISDS dataset.
-
-Custom plotting functions were developed within:
+The project includes reusable visualization utilities located in:
 
 ```text
 utils/bar_plot_utils.py
 ```
 
-These utilities standardize:
+These utilities generate publication-ready figures for:
 
-* annual case visualizations
-* grouped stacked-bar comparisons
-* total-case annotations
-* automatic figure export workflows
+* annual ISDS case volumes
+* mining vs non-mining disputes
+* developed vs developing economy comparisons
 
-All plots are automatically saved to the project `plots/` directory for reproducibility and downstream reporting.
+Generated figures are automatically exported to:
+
+```text
+plots/
+```
+
+### Generated Figures
+
+| Figure                       | Description                              |
+| ---------------------------- | ---------------------------------------- |
+| `annual_cases.png`           | Total ISDS cases per year                |
+| `annual_cases_mining.png`    | Mining vs non-mining disputes            |
+| `annual_cases_economies.png` | Developed vs developing economy disputes |
 
 ---
 
-## 27. Annual ISDS Case Volume
+# Technologies Used
 
-The workflow generates annual counts of all investor–state dispute settlement cases across the unified dataset.
-
-Cases are grouped by initiation year and visualized using a yearly bar chart with:
-
-* annual case totals
-* grand-total comparison bar
-* automated annotations
-
-The resulting figure is exported to:
-
-```text
-plots/annual_cases.png
-```
-
-This visualization supports:
-
-* temporal trend analysis
-* dispute-growth analysis
-* institutional activity comparisons over time
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Requests
+* PyCountry
+* Jupyter Notebook
 
 ---
 
-## 28. Mining vs Non-Mining Dispute Analysis
-
-The harmonized dataset is further analyzed by dispute sector classification.
-
-Using the binary:
+# Project Structure
 
 ```text
-mining_case
+project/
+│
+├── data/
+│   ├── raw/
+│   ├── interim/
+│   └── processed/
+│
+├── notebooks/
+│
+├── plots/
+│
+├── utils/
+│   ├── country_utils.py
+│   ├── constant_variables.py
+│   └── bar_plot_utils.py
+│
+├── requirements.txt
+└── README.md
 ```
-
-indicator, annual disputes are grouped into:
-
-* mining-related disputes
-* non-mining disputes
-
-The workflow produces a stacked annual comparison chart containing:
-
-* annual sector counts
-* percentage annotations
-* overall totals
-* comparative yearly trends
-
-The resulting figure is exported to:
-
-```text
-plots/annual_cases_mining.png
-```
-
-This visualization enables analysis of:
-
-* mining-sector arbitration growth
-* sectoral dispute composition
-* long-run mining-dispute trends
 
 ---
 
-## 29. Developed vs Developing Economy Analysis
+# Reproducibility
 
-The final visualization groups arbitration cases according to the respondent state's UNCTAD economy classification.
+The workflow is fully reproducible through:
 
-Using the:
-
-```text
-economy_classification
-```
-
-variable, annual disputes are classified into:
-
-* developing economies
-* developed economies
-
-The workflow generates a stacked annual comparison chart with:
-
-* yearly case totals
-* proportional annotations
-* aggregate institutional totals
-* longitudinal economy-group comparisons
-
-The resulting figure is exported to:
-
-```text
-plots/annual_cases_economies.png
-```
-
-This enables comparative analysis of:
-
-* ISDS exposure by economic grouping
-* dispute concentration trends
-* developing versus developed economy participation in arbitration proceedings
-
----
-
-## Reusable Visualization Framework
-
-The plotting utilities were designed as reusable analytical components.
-
-The visualization framework supports:
-
-* configurable grouped comparisons
-* reusable annual aggregation logic
-* automated annotation workflows
-* publication-ready figure export
-* reproducible plotting pipelines
-
-This modular structure allows additional comparative visualizations to be generated with minimal notebook code.
-
+* archived raw datasets
+* reusable utility modules
+* deterministic transformation pipelines
+* intermediate cleaned datasets
+* manual reconciliation dictionaries
+* automated plotting utilities
