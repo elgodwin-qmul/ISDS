@@ -233,3 +233,135 @@ The final processed ISDS dataset now includes:
 * UNCTAD economy classifications
 
 This produces a consolidated cross-institution investor–state dispute dataset ready for empirical analysis and research workflows.
+
+# Visualization and Exploratory Analysis
+
+The project includes reusable visualization utilities to support exploratory analysis and reproducible figure generation across the harmonized ISDS dataset.
+
+Custom plotting functions were developed within:
+
+```text
+utils/bar_plot_utils.py
+```
+
+These utilities standardize:
+
+* annual case visualizations
+* grouped stacked-bar comparisons
+* total-case annotations
+* automatic figure export workflows
+
+All plots are automatically saved to the project `plots/` directory for reproducibility and downstream reporting.
+
+---
+
+## 27. Annual ISDS Case Volume
+
+The workflow generates annual counts of all investor–state dispute settlement cases across the unified dataset.
+
+Cases are grouped by initiation year and visualized using a yearly bar chart with:
+
+* annual case totals
+* grand-total comparison bar
+* automated annotations
+
+The resulting figure is exported to:
+
+```text
+plots/annual_cases.png
+```
+
+This visualization supports:
+
+* temporal trend analysis
+* dispute-growth analysis
+* institutional activity comparisons over time
+
+---
+
+## 28. Mining vs Non-Mining Dispute Analysis
+
+The harmonized dataset is further analyzed by dispute sector classification.
+
+Using the binary:
+
+```text
+mining_case
+```
+
+indicator, annual disputes are grouped into:
+
+* mining-related disputes
+* non-mining disputes
+
+The workflow produces a stacked annual comparison chart containing:
+
+* annual sector counts
+* percentage annotations
+* overall totals
+* comparative yearly trends
+
+The resulting figure is exported to:
+
+```text
+plots/annual_cases_mining.png
+```
+
+This visualization enables analysis of:
+
+* mining-sector arbitration growth
+* sectoral dispute composition
+* long-run mining-dispute trends
+
+---
+
+## 29. Developed vs Developing Economy Analysis
+
+The final visualization groups arbitration cases according to the respondent state's UNCTAD economy classification.
+
+Using the:
+
+```text
+economy_classification
+```
+
+variable, annual disputes are classified into:
+
+* developing economies
+* developed economies
+
+The workflow generates a stacked annual comparison chart with:
+
+* yearly case totals
+* proportional annotations
+* aggregate institutional totals
+* longitudinal economy-group comparisons
+
+The resulting figure is exported to:
+
+```text
+plots/annual_cases_economies.png
+```
+
+This enables comparative analysis of:
+
+* ISDS exposure by economic grouping
+* dispute concentration trends
+* developing versus developed economy participation in arbitration proceedings
+
+---
+
+## Reusable Visualization Framework
+
+The plotting utilities were designed as reusable analytical components.
+
+The visualization framework supports:
+
+* configurable grouped comparisons
+* reusable annual aggregation logic
+* automated annotation workflows
+* publication-ready figure export
+* reproducible plotting pipelines
+
+This modular structure allows additional comparative visualizations to be generated with minimal notebook code.
+
