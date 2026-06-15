@@ -224,12 +224,6 @@ def plot_comparison_summary(
 
         return summary_table
 
-
-import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
-
-
 def plot_yearly_totals(
     df,
     year_col,
