@@ -1,7 +1,7 @@
 [project]
 name = "isds-clean"
 version = "0.1.0"
-description = "Add your description here"
+description = "Supplementary data analysis and reproducibility materials for 'Investor-State Dispute Settlement System as a Barrier to Environmental Justice'"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -11,3 +11,19 @@ dependencies = [
     "pycountry>=26.2.16",
     "requests>=2.34.2",
 ]
+
+authors = [
+    { name = "Dr. Kevin Bolton", email = "kpb204@outlook.com" }
+]
+
+license = { text = "MIT" }
+
+keywords = [
+    "research",
+    "reproducibility",
+    "data-analysis"
+]
+
+[project.urls]
+Repository = "TBC"
+Paper = "TBC"

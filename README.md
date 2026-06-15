@@ -1,3 +1,41 @@
+# Investor-State Dispute Settlement System as a Barrier to Environmental Justice
+
+## Overview
+
+This repository contains supplementary data analysis, visualisations, and reproducibility materials associated with the research paper:
+
+> Investor-State Dispute Settlement System as a Barrier to Environmental Justice
+>
+> Godwin, E.L.
+>
+> TBC
+>
+> DOI: xx.xxxx/xxxxx
+
+## Contributions
+
+### Research
+
+- Author A
+- Author B
+
+### Software and Data Analysis
+
+- Dr. Kevin Bolton
+
+Responsibilities:
+- Data collection & processing
+- Statistical analysis
+- Visualisation
+- Computational reproducibility
+
+## Citation
+
+If using the research findings, please cite the original paper.
+
+If using the code or analysis workflow from this repository, please also cite this repository and acknowledge the software contribution.
+
+
 # ISDS Mining Disputes Dataset
 
 ## Overview
