@@ -10,7 +10,7 @@ This repository contains supplementary data analysis, visualisations, and reprod
 >
 > TBC
 >
-> DOI: xx.xxxx/xxxxx
+> DOI: TBC
 
 ## Contributions
 
@@ -39,7 +39,7 @@ If using the code or analysis workflow from this repository, please also cite th
 
 ## Overview
 
-This project builds a harmonized investor–state dispute settlement (ISDS) dataset by integrating arbitration case data from:
+This project builds a harmonised investor–state dispute settlement (ISDS) dataset by integrating arbitration case data from:
 
 * ICSID
 * UNCTAD ISDS Navigator
@@ -70,7 +70,6 @@ The workflow standardizes and harmonizes datasets across institutions by:
 * Expanding nested JSON structures into flat analytical tables
 * Cleaning respondent-state names using reusable country utilities
 * Standardizing sovereign country names
-* Generating ISO3 country codes
 * Validating missing or malformed entries
 * Applying reproducible manual reconciliation dictionaries where automated extraction fails
 
@@ -83,7 +82,7 @@ Country normalization is implemented using:
 
 ### Example Country Standardization
 
-| Raw Input                   | Standardized Output |
+| Raw Input                   | Standardised Output |
 | --------------------------- | ------------------- |
 | `Republic of Korea`         | `South Korea`       |
 | `Republic of Turkey`        | `Turkey`            |
@@ -116,7 +115,7 @@ Mining-sector disputes are identified using:
 * UNCTAD economic-sector labels
 * PCA sector classifications
 
-Cases are standardized into a binary indicator:
+Cases are standardised into a binary indicator:
 
 | Value | Meaning                |
 | ----- | ---------------------- |
@@ -166,17 +165,24 @@ This produces a new analytical variable:
 
 ## 7. Unified Dataset Construction
 
-The cleaned ICSID, UNCTAD, and PCA datasets are harmonized into a single analytical dataframe containing:
+The cleaned ICSID, UNCTAD, and PCA datasets are harmonised into a single analytical dataframe containing:
 
-* standardized respondent countries
+* standardised respondent countries
 * ISO3 country codes
-* harmonized case identifiers
+* harmonised case identifiers
 * cleaned temporal variables
 * mining-sector indicators
 * economy classifications
 * institutional overlap indicators
 
 ### Final Dataset Export
+
+The final dataset exported and used in the analysis contains:
+* standardised respondent countries
+* harmonised case identifiers
+* case year
+* mining-sector indicators
+* economy classifications
 
 ```text
 data/processed/MINING_CASES_202606.csv
