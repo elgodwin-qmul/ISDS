@@ -16,12 +16,11 @@ This repository contains supplementary data analysis, visualisations, and reprod
 
 ### Research
 
-- Author A
-- Author B
+- Dr. E. Godwin
 
 ### Software and Data Analysis
 
-- Dr. Kevin Bolton
+- Dr. K. P. Bolton
 
 Responsibilities:
 - Data collection & processing
@@ -262,3 +261,192 @@ The workflow is fully reproducible through:
 * intermediate cleaned datasets
 * manual reconciliation dictionaries
 * automated plotting utilities
+
+# Installation and Reproducibility Setup
+
+This repository uses the Python package manager **uv** to provide a fully reproducible computational environment. The recommended approach is to recreate the environment directly from the provided `pyproject.toml` and `uv.lock` files.
+
+## Prerequisites
+
+### Install Python
+
+This project requires:
+
+```text
+Python 3.12 or later
+```
+
+Check your Python version:
+
+```bash
+python --version
+```
+
+or
+
+```bash
+python3 --version
+```
+
+If Python is not installed, download it from:
+
+https://www.python.org/downloads/
+
+---
+
+## Install uv
+
+### Windows (PowerShell)
+
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+### macOS and Linux
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Verify installation:
+
+```bash
+uv --version
+```
+
+---
+
+## Clone the Repository
+
+```bash
+git clone <repository-url>
+```
+
+Replace `<repository-url>` with the repository URL.
+
+---
+
+## Create the Reproducible Environment
+
+The repository includes:
+
+```text
+pyproject.toml
+uv.lock
+```
+
+which define the exact software environment used in the study.
+
+Create and synchronize the environment:
+
+```bash
+uv sync
+```
+
+This command:
+
+* creates a local virtual environment (`.venv`)
+* installs all required dependencies
+* reproduces the exact package versions recorded in `uv.lock`
+
+---
+
+## Activate the Environment
+
+### Windows
+
+```powershell
+.venv\Scripts\activate
+```
+
+### macOS/Linux
+
+```bash
+source .venv/bin/activate
+```
+
+---
+
+## Verify Installation
+
+Run:
+
+```bash
+python -c "import pandas, matplotlib, pycountry, requests; print('Environment successfully configured')"
+```
+
+If no errors are returned, the environment has been recreated successfully.
+
+---
+
+## Running the Analysis
+
+Execute notebooks or Python scripts within the activated environment.
+
+For example:
+
+```bash
+jupyter notebook
+```
+
+or
+
+```bash
+python path/to/script.py
+```
+
+Generated datasets will be written to:
+
+```text
+data/processed/
+```
+
+Generated figures will be written to:
+
+```text
+plots/
+```
+
+---
+
+## Reproducing the Original Environment
+
+For exact computational reproducibility, users should rely on:
+
+```text
+pyproject.toml
+uv.lock
+```
+
+rather than manually installing packages.
+
+The `uv.lock` file records the precise dependency versions used when generating the results reported in the accompanying publication.
+
+To recreate the environment at any time:
+
+```bash
+uv sync
+```
+
+No manual dependency installation is required.
+
+---
+
+## Alternative Installation Using pip
+
+A pip-compatible requirements file is also provided.
+
+Create a virtual environment:
+
+```bash
+python -m venv .venv
+```
+
+Activate the environment and install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+The uv workflow is recommended because it provides stronger reproducibility guarantees through dependency locking.
+
