@@ -1,4 +1,23 @@
 # Investor-State Dispute Settlement System as a Barrier to Environmental Justice
+## Table of Contents
+
+- [Overview](#overview)
+- [Contributions](#contributions)
+- [Citation](#citation)
+- [ISDS Mining Disputes Dataset](#isds-mining-disputes-dataset)
+- [Workflow Summary](#workflow-summary)
+  - [1. Data Extraction](#1-data-extraction)
+  - [2. Data Cleaning and Standardization](#2-data-cleaning-and-standardization)
+  - [3. Date Validation and Repair](#3-date-validation-and-repair)
+  - [4. Mining-Sector Classification](#4-mining-sector-classification)
+  - [5. Dataset Crosswalking and Deduplication](#5-dataset-crosswalking-and-deduplication)
+  - [6. Economy Classification Integration](#6-economy-classification-integration)
+  - [7. Unified Dataset Construction](#7-unified-dataset-construction)
+- [Visualization and Exploratory Analysis](#visualization-and-exploratory-analysis)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Installation and Reproducibility Setup](#installation-and-reproducibility-setup)
+- [Reproducibility](#reproducibility)
 
 ## Overview
 
