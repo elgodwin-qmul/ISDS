@@ -7,13 +7,13 @@
 - [ISDS Mining Disputes Dataset](#isds-mining-disputes-dataset)
 - [Workflow Summary](#workflow-summary)
   - [1. Data Extraction](#1-data-extraction)
-  - [2. Data Cleaning and Standardization](#2-data-cleaning-and-standardization)
+  - [2. Data Cleaning and Standardisation](#2-data-cleaning-and-standardisation)
   - [3. Date Validation and Repair](#3-date-validation-and-repair)
   - [4. Mining-Sector Classification](#4-mining-sector-classification)
   - [5. Dataset Crosswalking and Deduplication](#5-dataset-crosswalking-and-deduplication)
   - [6. Economy Classification Integration](#6-economy-classification-integration)
   - [7. Unified Dataset Construction](#7-unified-dataset-construction)
-- [Visualization and Exploratory Analysis](#visualization-and-exploratory-analysis)
+- [Visualisation and Exploratory Analysis](#visualisation-and-exploratory-analysis)
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
 - [Installation and Reproducibility Setup](#installation-and-reproducibility-setup)
@@ -82,24 +82,24 @@ Raw source files are archived for reproducibility.
 
 ---
 
-## 2. Data Cleaning and Standardization
+## 2. Data Cleaning and Standardisation
 
-The workflow standardizes and harmonizes datasets across institutions by:
+The workflow standardises and harmonises datasets across institutions by:
 
 * Expanding nested JSON structures into flat analytical tables
 * Cleaning respondent-state names using reusable country utilities
-* Standardizing sovereign country names
+* Standardising sovereign country names
 * Validating missing or malformed entries
 * Applying reproducible manual reconciliation dictionaries where automated extraction fails
 
-Country normalization is implemented using:
+Country normalisation is implemented using:
 
 * Python
 * Pandas
 * `pycountry`
 * Regex-based cleaning utilities
 
-### Example Country Standardization
+### Example Country Standardisation
 
 | Raw Input                   | Standardised Output |
 | --------------------------- | ------------------- |
@@ -153,7 +153,7 @@ The workflow cross-references arbitration case numbers across institutions to id
 * institution-specific disputes
 * missing arbitration identifiers
 
-The harmonization process:
+The harmonisation process:
 
 * retains all ICSID cases
 * keeps only UNCTAD cases not already present in ICSID
@@ -170,7 +170,7 @@ The final merged dataset integrates respondent-state economy classifications usi
 The workflow:
 
 * extracts developed and developing economy labels
-* standardizes country names across datasets
+* standardises country names across datasets
 * merges classifications into the unified ISDS dataset
 * manually reconciles unresolved country-label mismatches
 
@@ -209,9 +209,9 @@ data/processed/MINING_CASES_202606.csv
 
 ---
 
-# Visualization and Exploratory Analysis
+# Visualisation and Exploratory Analysis
 
-The project includes reusable visualization utilities located in:
+The project includes reusable visualisation utilities located in:
 
 ```text
 utils/bar_plot_utils.py
@@ -362,7 +362,7 @@ uv.lock
 
 which define the exact software environment used in the study.
 
-Create and synchronize the environment:
+Create and synchronise the environment:
 
 ```bash
 uv sync
