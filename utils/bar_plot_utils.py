@@ -12,6 +12,7 @@ def plot_comparison_summary(
     group2_label,
     title,
     figsize=(14, 7),
+    fontweight="bold",
     save_path=None,
     show_table=False
 ):
@@ -232,6 +233,7 @@ def plot_yearly_totals(
     bar_color="#1f77b4",
     total_color="#ff7f0e",
     figsize=(14, 7),
+    fontweight="bold",
     save_path=None,
     show_table=False
 ):
